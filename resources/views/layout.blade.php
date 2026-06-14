@@ -11,6 +11,7 @@
         <ul class="flex space-x-5 text-shadow-lg">
             <li><a href="/" class="hover:text-gray-300">Home</a></li>
             <li><a href="/projects" class="hover:text-gray-300">Projecten</a></li>
+            <li><a href="/nieuw-project" class="hover:text-gray-300">Nieuw Project</a></li>
             <li><a href="/contact" class="hover:text-gray-300">Contact</a></li>
         </ul>
     </nav>
