@@ -24,31 +24,37 @@
 </div>
 
 <!-- Core functions & Gebruikte Technologieen -->
-<div>
-    <div>
-        <h2>Core Function</h2>
-        <ul>
-            <li>Volledige CRUD functionaliteit voor <br> coördinatoren</li>
-            <li>Custom Laravel Middleware die <br> inkomende HTTP-verzoeken intercept en <br> routes autoriseert op basis van <br> authenticatie-context.</li>
-            <li>Een beveiligde back-end route voor directe <br> database-mutaties op de rollenstructuur <br> van gebruikers.</li>
+<div class="bg-[#D5CFC5] flex items-center justify-center gap-50 h-full">
+    <div class="flex items-center font-extralight text-2xl">
+        <h2 class="text-[#534A3E] text-center px-15">Core <br>Functions</h2>
+        <ul class="flex flex-col justify-center  gap-4 ">
+            <li class="bg-[#B8AFA2] p-4 rounded h-25 text-center text-[18px] font-extralight flex items-center">Volledige CRUD functionaliteit voor <br> coördinatoren</li>
+            <li class="bg-[#B8AFA2] p-4 rounded h-25 text-center text-sm font-extralight flex items-center">Custom Laravel Middleware die <br> inkomende HTTP-verzoeken intercept en <br> routes autoriseert op basis van <br> authenticatie-context.</li>
+            <li class="bg-[#B8AFA2] p-4 rounded h-25 text-center text-sm font-extralight flex items-center">Een beveiligde back-end route voor directe <br> database-mutaties op de rollenstructuur <br> van gebruikers.</li>
         </ul>
     </div>
-    <div>
-        <h2>Gebruikte Tehcnologieen</h2>
-        <li>Laravel</li>
-        <li>MYSQL</li>
-        <li>Tailwind</li>
+    <div class="px-30">
+        <h2 class="text-[#534A3E] text-[40px] pt-20 pb-2 font-extralight text-center">Gebruikte Technologieen</h2>
+        <ul class="flex flex-col justify-center items-center gap-3 pb-20">
+            <li class="bg-[#918574]  py-4 rounded w-[60%] text-center text-white text-2xl font-extralight">Laravel</li>
+            <li class="bg-[#918574]  py-4 rounded w-[60%] text-center text-white text-2xl font-extralight">Tailwind</li>            
+            <li class="bg-[#918574]  py-4 rounded w-[60%] text-center text-white text-2xl font-extralight">MYSQL</li>
+        </ul>
     </div>
 </div>
 
 <!-- Foto Section-->
- <div>
-    <h2>Foto's van het project</h2>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <a href="http://www.github.com/shaiqMA">Check op GitHub →</a>
+ <div class="bg-[#B8AFA2] flex flex-col items-center ">
+    <div class="justify-center p-6 flex items-center w-full ">
+        <h2 class="bg-[#534A3E] text-center p-4 rounded text-white font-extralight w-[99%] text-2xl">Foto's van het project</h2>
+    </div>
+    <div class=" grid grid-cols-2 gap-20 place-items-center w-full pb-10">
+        <div class="bg-white w-[70%] h-[15vw]"><img src="{{ asset('images/home.png') }}"></div>
+        <div class="bg-white w-[70%] h-[15vw]"><img src="{{ asset('images/home2.png') }}" ></div>
+        <div class="bg-white w-[70%] h-[15vw]"><img src="{{ asset('images/Flights.png') }}" ></div>
+        <div class="bg-white w-[70%] h-[15vw]"><img src="{{ asset('images/bookings.png') }}"></div>
+    </div>
+    <a href="http://www.github.com/shaiqMA" class="text-white text-center font-extralight p-5 text-[30px]">Check op GitHub →</a>
  </div>
 
 @endsection
