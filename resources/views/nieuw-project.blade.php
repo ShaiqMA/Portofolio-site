@@ -24,16 +24,16 @@
 </div>
 
 <!-- Core functions & Gebruikte Technologieen -->
-<div class="bg-[#D5CFC5] flex items-center justify-center gap-50 h-full">
-    <div class="flex items-center font-extralight text-2xl">
+<div class="bg-[#D5CFC5] flex   items-center justify-center gap-20  max-[1411px]:gap-50 h-full">
+    <div class="flex  items-center font-extralight text-2xl  py-6">
         <h2 class="text-[#534A3E] text-center px-15">Core <br>Functions</h2>
-        <ul class="flex flex-col justify-center  gap-4 ">
-            <li class="bg-[#B8AFA2] p-4 rounded h-25 text-center text-[18px] font-extralight flex items-center">Volledige CRUD functionaliteit voor <br> coördinatoren</li>
-            <li class="bg-[#B8AFA2] p-4 rounded h-25 text-center text-sm font-extralight flex items-center">Custom Laravel Middleware die <br> inkomende HTTP-verzoeken intercept en <br> routes autoriseert op basis van <br> authenticatie-context.</li>
-            <li class="bg-[#B8AFA2] p-4 rounded h-25 text-center text-sm font-extralight flex items-center">Een beveiligde back-end route voor directe <br> database-mutaties op de rollenstructuur <br> van gebruikers.</li>
+        <ul class="flex flex-col justify-center gap-4 ">
+            <li class="bg-[#B8AFA2] p-4 rounded h-25 text-center w-80 max-[1360px]:w-30 text-[80%] max-[718px]:text-[10px] max-[1320px]:text-[10px] font-extralight flex items-center">Volledige CRUD functionaliteit <br>voor coördinatoren</li>
+            <li class="bg-[#B8AFA2] p-4 rounded h-25 text-center w-80 max-[1360px]:w-30 text-[60%] max-[718px]:text-[10px] max-[1320px]:text-[10px] font-extralight flex items-center">Custom Laravel Middleware die <br> inkomende HTTP-verzoeken intercept en <br> routes autoriseert op basis van <br> authenticatie-context.</li>
+            <li class="bg-[#B8AFA2] p-4 rounded h-25 text-center w-80 max-[1360px]:w-30 text-[60%] max-[718px]:text-[10px] max-[1320px]:text-[10px] font-extralight flex items-center">Een beveiligde back-end route voor directe <br> database-mutaties op de rollenstructuur <br> van gebruikers.</li>
         </ul>
     </div>
-    <div class="px-30">
+    <div class=" max-[1360px]:hidden px-30 bg-[#D5CFC5]">
         <h2 class="text-[#534A3E] text-[40px] pt-20 pb-2 font-extralight text-center">Gebruikte Technologieen</h2>
         <ul class="flex flex-col justify-center items-center gap-3 pb-20">
             <li class="bg-[#918574]  py-4 rounded w-[60%] text-center text-white text-2xl font-extralight">Laravel</li>
@@ -42,13 +42,21 @@
         </ul>
     </div>
 </div>
+<div class="bg-[#D5CFC5] hidden max-[1360px]:block px-30">
+    <h2 class="text-[#534A3E] text-[40px] max-[609px]:text-[35px] pt-20 pb-2 font-extralight text-center">Gebruikte Technologieen</h2>
+    <ul class="flex flex-col justify-center items-center gap-3 pb-20">
+        <li class="bg-[#918574]  py-4 rounded w-[60%] text-center text-white text-2xl font-extralight max-[609px]:text-[14px]">Laravel</li>
+        <li class="bg-[#918574]  py-4 rounded w-[60%] text-center text-white text-2xl font-extralight max-[609px]:text-[14px]">Tailwind</li>            
+        <li class="bg-[#918574]  py-4 rounded w-[60%] text-center text-white text-2xl font-extralight max-[609px]:text-[14px]">MYSQL</li>
+    </ul>
+</div>
 
 <!-- Foto Section-->
- <div class="bg-[#B8AFA2] flex flex-col items-center ">
+ <div class="bg-[#B8AFA2] flex flex-col items-center">
     <div class="justify-center p-6 flex items-center w-full ">
         <h2 class="bg-[#534A3E] text-center p-4 rounded text-white font-extralight w-[99%] text-2xl">Foto's van het project</h2>
     </div>
-    <div class=" grid grid-cols-2 gap-20 place-items-center w-full pb-10">
+    <div class=" grid grid-cols-2 gap-20 place-items-center w-full pb-10 max-[1200px]:grid-cols-1 max-[1200px]:gap-5 max-[1200px]:h-[200vw] ">
         <div class="bg-white w-[70%] h-[15vw]"><img src="{{ asset('images/home.png') }}"></div>
         <div class="bg-white w-[70%] h-[15vw]"><img src="{{ asset('images/home2.png') }}" ></div>
         <div class="bg-white w-[70%] h-[15vw]"><img src="{{ asset('images/Flights.png') }}" ></div>
