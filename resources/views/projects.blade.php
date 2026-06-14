@@ -1,9 +1,26 @@
+
+
 @extends('layout')
 
 @section('content')
-
+    @vite(['resources/js/filter.ts'])
     <div class="bg-taupe-400 py-6 sm:py-8 md:py-10 drop-shadow-2xl justify-center items-center flex flex-col gap-4">
          <h1 class="text-center p-3 sm:p-4 bg-taupe-600 border-x text-taupe-200 rounded-lg text-lg sm:text-2xl md:text-3xl text-shadow-lg border-none shadow-lg font-light">Mijn Projecten</h1>
+    </div>
+
+    <div class="bg-taupe-200 py-4 flex flex-wrap gap-2 sm:gap-3 justify-center items-center border-b border-taupe-300 shadow-inner">
+        <button data-filter="all" class="filter-btn px-4 py-1.5 sm:px-5 sm:py-2 rounded-lg bg-taupe-600 text-taupe-200 font-light text-sm sm:text-base transition-all duration-200 shadow-md"> 
+            Alles 
+        </button>
+        <button data-filter="laravel" class="filter-btn px-4 py-1.5 sm:px-5 sm:py-2 rounded-lg bg-taupe-600 text-taupe-200 font-light text-sm sm:text-base transition-all duration-200 shadow-md"> 
+            Laravel 
+        </button>
+        <button data-filter="python" class="filter-btn px-4 py-1.5 sm:px-5 sm:py-2 rounded-lg bg-taupe-600 text-taupe-200 font-light text-sm sm:text-base transition-all duration-200 shadow-md"> 
+            Python 
+        </button>
+        <button data-filter="unity" class="filter-btn px-4 py-1.5 sm:px-5 sm:py-2 rounded-lg bg-taupe-600 text-taupe-200 font-light text-sm sm:text-base transition-all duration-200 shadow-md"> 
+            Unity 
+        </button>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch gap-3 sm:gap-4 md:gap-5 p-3 sm:p-4 md:p-6 bg-taupe-100">
