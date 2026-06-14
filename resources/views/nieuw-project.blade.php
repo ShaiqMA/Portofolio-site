@@ -46,6 +46,7 @@
     <div></div>
     <div></div>
     <div></div>
+    <a href="http://www.github.com/shaiqMA">Check op GitHub →</a>
  </div>
 
 @endsection
