@@ -1,6 +1,38 @@
+<!-- 
+Alle bronnen voor mijn code: 
+STYLING
+ - voor styling heb ik gebruik gemaakt van tailwind css: hiervoor heb ik bijna alles gezocht uit de tailinwind docs,
+    alles is hierin te vinden voor me omdat ik al weet hoe ik normale css moet gebruiken en alleen de keywordszoals "responsive design" moet zoeken
+
+    https://tailwindcss.com/docs/installation/using-vite
+    https://tailwindcss.com/docs/responsive-design
+    (de meest gebruikte onderwerpen die ik heb gezocht: 
+    - flexbox & grid
+    - layout
+    - backgrounds
+    - borders
+    - effects
+    )
+
+GEBRUIK VAN BLADES
+ - voor mijn applicatie heb ik laravel gebruikt, hierbij is het van belang dat ik weet hoe ik layouts kan gebruiken zonder heletijd navbars kopieren en plakken
+
+    https://laravel.com/docs/
+    https://laravel.com/docs/13.x/blade#main-content
+    https://dev.to/icornea/laravel-blade-template-engine-a-beginners-guide-54bi
+
+    schoolmodules:
+    https://talnet.instructure.com/courses/20302/pages/routing-2?module_item_id=975642
+    https://talnet.instructure.com/courses/20302
+
+
+FORM SUBMITTING
+ https://www.youtube.com/watch?v=-HeadgoqJ7A
+-->
 @extends('layout')
 
 @section('content')
+<!-- sectie waar je een grote titel en een pargaaf ziet met een knop eronder die je naar de form brengt -->
     <section id="banner" class="bg-taupe-300 shadow-lg text-center py-40  ">
         <h1 class="transform transition text-3xl sm:text-5xl font-light mb-2 text-taupe-600">Neem contact met mij op</h1>
         <p class=" font-extralight text-[14px]  text-taupe-500">Heb je vragen of wil je samenwerken? Stuur me een bericht!
@@ -12,14 +44,17 @@
         </a>
     </section>
 
+    <!-- sectie met mijn contact informatie erin -->
     <section class="bg-taupe-400 py-10 drop-shadow-2xl justify-center items-center flex flex-col sm:flex-row gap-4">
         <div class="m-2 rounded-lg  shadow-lg p-4 sm:w-2/4 sm:p-6 bg-taupe-300">
             <h2 class="text-2xl font-light text-taupe-600 px-4 border-b pb-2 border-taupe-600 text-center">Contactinformatie
             </h2>
+            <!-- email -->
             <p class="font-extralight text-taupe-500 px-4 mt-2 text-center">E-mail: <a href="mailto: shaiqahmed26@gmail.com"
                     class="border-b border-taupe-600 hover:text-gray-300">
                     shaiqahmed26@gmail.com
                 </a></p>
+                <!-- nummer -->
             <p class="font-extralight text-taupe-500 px-4 mt-2 text-center">Telefoon: <a href="tel:+31612345678"
                     class="border-b border-taupe-600 hover:text-gray-300">
                     +31 6 86302819
@@ -27,6 +62,7 @@
         </div>
     </section>
 
+    <!-- formulier met naam email en een bericht die je wilt intypen en een versturen knop -->
     <section class="bg-taupe-300 py-10 drop-shadow-2xl justify-center items-center flex flex-col  gap-4">
         <h2 class="text-2xl sm:text-4xl font-light text-taupe-600 px-4 ">Stuur een bericht</h2>
         <form action="https://api.web3forms.com/submit" method="POST" id="contactForm"

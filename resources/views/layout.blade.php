@@ -1,3 +1,31 @@
+<!-- 
+Alle bronnen voor mijn code: 
+STYLING
+ - voor styling heb ik gebruik gemaakt van tailwind css: hiervoor heb ik bijna alles gezocht uit de tailinwind docs,
+    alles is hierin te vinden voor me omdat ik al weet hoe ik normale css moet gebruiken en alleen de keywordszoals "responsive design" moet zoeken
+
+    https://tailwindcss.com/docs/installation/using-vite
+    https://tailwindcss.com/docs/responsive-design
+    (de meest gebruikte onderwerpen die ik heb gezocht: 
+    - flexbox & grid
+    - layout
+    - backgrounds
+    - borders
+    - effects
+    )
+
+GEBRUIK VAN BLADES
+ - voor mijn applicatie heb ik laravel gebruikt, hierbij is het van belang dat ik weet hoe ik layouts kan gebruiken zonder heletijd navbars kopieren en plakken
+
+    https://laravel.com/docs/
+    https://laravel.com/docs/13.x/blade#main-content
+    https://dev.to/icornea/laravel-blade-template-engine-a-beginners-guide-54bi
+
+    schoolmodules:
+    https://talnet.instructure.com/courses/20302/pages/routing-2?module_item_id=975642
+    https://talnet.instructure.com/courses/20302
+
+-->
 <!DOCTYPE html>
 <html lang="nl" class="scroll-smooth">
 
@@ -8,7 +36,10 @@
 </head>
 
 <body class="flex flex-col min-h-screen ">
+    <!-- koppeling naar app.css -->
     @vite('resources/css/app.css')
+
+    <!-- navigatiebar -->
     <nav aria-label="Hoofdnavigatie" class="bg-taupe-600 text-white p-4 font-extralight drop-shadow-lg">
         <ul class="flex space-x-5 text-shadow-lg">
             <li><a href="/" class="hover:text-gray-300">Home</a></li>
@@ -18,10 +49,12 @@
         </ul>
     </nav>
 
+    <!-- hier komt de main content in  van elk pagina-->
     <main class="grow">
         @yield('content')
     </main>
 
+    <!-- footer sectie -->
     <footer>
         <div class="bg-taupe-600 text-white p-4 text-center">
             <a href="https://www.linkedin.com/in/shaiq-ahmed-/" target="_blank"
